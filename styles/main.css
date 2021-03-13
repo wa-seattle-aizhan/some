@@ -1,0 +1,26 @@
+.coube{
+    width:200px;
+    height:200px;
+    position:absolute;
+}
+#red{
+    background-color: red;
+    z-index: 3;
+}
+#yellow{
+    background-color: yellow;
+    top:50px;
+    left:50px;
+    z-index: 2;
+
+}
+#green{
+    background-color: green;
+    top:100px;
+    left:100px;
+    z-index: 1;
+}
+.active{
+    border:3px solid black;
+
+}

@@ -1,0 +1,19 @@
+.coube{
+    width:200px;
+    height:200px;
+    position:absolute;
+}
+.coube:first-child{
+    background-color: red;
+}
+.coube:nth-child(2){
+    background-color: yellow;
+    top:50px;
+    left:50px;
+}
+.coube:nth-child(3){
+    background-color: green;
+
+    top: 100px;
+    left: 100px;
+}

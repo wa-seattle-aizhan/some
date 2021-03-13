@@ -1,0 +1,318 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+header{
+    width: 100%;
+}
+header div{
+    display:flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+}
+h1{
+font-size: 52px;
+text-transform: uppercase;
+color: #0088A2;
+}
+h1:hover{
+    color:darkgreen;    
+}
+.logo{
+    width:150px;
+    height:150px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    background-color:  #808080;
+}
+li{
+font-family: Open Sans;
+font-size: 32px;
+text-align: center;
+list-style:none;
+padding:10px;
+color:white;
+}
+
+li:hover {
+    background: #0088A2;
+}
+
+.item{
+    width:20%;
+}
+.cards{
+    display:flex;
+    justify-content: space-between;
+}
+.block{
+ position: relative;
+}
+.block p{
+    position: absolute;
+    top: 40%;
+    font-size:27px;
+    text-align:center;
+    color:white;
+
+}
+p:hover{
+    border-bottom: 2px solid white;
+}
+.block:hover{
+    border: 2px solid #0088a2;
+    cursor:pointer;
+    opacity:0.4;
+}
+.app{width:100%;
+}
+.app h2{
+    text-transform: uppercase;
+    color: #0088A2;
+    text-align: center;
+    font-size:50px;
+}
+.banner{
+   width:100%;
+   position:relative;
+}
+.video{
+    width:100%;
+}
+.play{
+    position: absolute;
+top:40%;
+left:45%;
+width:70px;
+}
+.fiveCards{
+    width:60%;
+    margin:auto;
+    margin-top:4%;
+    height:550px;
+    position: relative;
+
+}
+.kartochka{
+    position: absolute;
+    width:250px;
+}
+.kartochka:nth-child(2){
+    left:20%;
+}
+.kartochka:nth-child(3){
+    left:40%;
+}
+.kartochka:nth-child(4){
+    left:60%;
+}
+.kartochka:nth-child(5){
+    left:80%;
+}
+.kartochka:nth-child(even){
+    top:5%;
+}
+.project{
+    margin:20px 0px 50px 0px;
+}
+ .project h2{
+
+    color: #0088A2;
+    font-size: 50px;
+    text-align: center;
+
+}
+.project p{
+    color:#707070;
+    font-size: 25px;
+    text-align: center;
+    width:50%; 
+    margin: auto;
+}
+.download{
+    margin:20px 0px 50px 0px;
+
+}
+.download h2{
+    color: #0088A2;
+    font-size: 50px;
+    text-align: center;
+
+}
+.pictures {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.pictures img{
+    width: 250px;
+
+}
+.download p{
+    color:#707070;
+    font-size: 25px;
+    text-align: center;
+    width:50%; 
+    margin: auto;
+}
+footer{
+    background-color: #0088A2;
+}
+h2{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+    margin: auto;
+}
+.all{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40px;
+width:96%;
+color: white;
+}
+h3{
+    font-size: 30px;
+}
+
+
+@media  screen and (max-width : 376px) {
+    .slogan{
+        display: block;
+        width: 100%;
+    }
+    .logo{
+        width: 50% !important;
+        margin-left: 25%;
+        height: 200px;
+    }
+    .slogan h1{
+        font-size: 24px;
+        text-align: center;
+    }
+    .menu{
+        display: none;
+    }
+    
+    .cards{
+        display: block !important; 
+        width: 100%; 
+    }
+    .block{
+        width: 96%;
+        margin: auto;
+    }
+    .block img{
+        width: 100%;
+    }
+    .fiveCards{
+        display: none
+    }
+    .pictures{
+        display: block;
+    }
+    .app h2{
+        
+        font-size:40px;
+    }
+}
+
+#menu_toggle{
+    opacity: 0;
+}
+/* стилизация бургера */
+.menu_btn{
+    display:flex;
+    align-items: center;
+    position: fixed;
+    top:20px;
+    left:20px;
+    width:26px;
+    height:26px;
+    cursor:pointer;
+    z-index: 11;
+}
+.menu_btn > span,
+.menu_btn > span::before,
+.menu_btn > span::after{
+    display:block;
+    position:absolute;
+    width:100%;
+    height:2px;
+    background-color: cornflowerblue;
+}
+.menu_btn>span::before{
+    top:-8px;
+    content: '';
+    transition: 1s;
+}
+.menu_btn>span::after{
+    top:8px;
+    content: '';
+}
+/* стилизация контента меню */
+.menu_box{
+    display:block;
+    position: fixed;
+    top:0;
+    left:-100%;
+    visibility: hidden;
+    width:300px;
+    height:100%;
+    margin:0;
+    padding:80px 0 ;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, .2);
+    transition:  1s;
+    z-index: 10;
+}
+/* элементы меню */
+.menu_item{
+    display: block;
+    padding:12px 24px;
+    color:#0088A2;
+    font-size:20px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #0088A2;
+    width:60%;
+    margin:auto;
+}
+.menu_item:hover{
+    background-color: #0088A2;
+    color:white;
+    transition: 1s;
+
+}
+#menu_toggle:checked ~ .menu_btn > span{
+    transform: rotate(45deg);
+}
+#menu_toggle:checked ~ .menu_btn > span::before {
+    top:0;
+    transform: rotate(0deg);
+    transition: 2s;
+}
+#menu_toggle:checked ~ .menu_btn > span::after {
+    top:0;
+    transform: rotate(90deg);
+    transition: 2s;
+}
+#menu_toggle:checked ~ .menu_box {
+    visibility: visible;
+    left:0;
+}

@@ -1,0 +1,191 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+
+.slogan{
+    display:flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    margin-top: 80px;
+}
+.title{
+font-size: 52px;
+text-transform: uppercase;
+color: #0088A2;
+}
+h1:hover{
+    color:darkgreen;    
+}
+.logo{
+    width:150px;
+    height:150px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    background-color:  #808080;
+}
+li{
+font-family: Open Sans;
+font-size: 32px;
+text-align: center;
+list-style:none;
+padding:10px;
+color:white;
+}
+
+li:hover {
+    background: #0088A2;
+}
+
+.item{
+    width:20%;
+}
+.cards{
+    display:flex;
+    justify-content: space-between;
+}
+.block{
+ position: relative;
+}
+.block p{
+    position: absolute;
+    top: 40%;
+    font-size:27px;
+    text-align:center;
+    color:white;
+
+}
+p:hover{
+    border-bottom: 2px solid white;
+}
+.block:hover{
+    border: 2px solid #0088a2;
+    cursor:pointer;
+    opacity:0.4;
+}
+.app{width:100%;
+}
+.app h2{
+    text-transform: uppercase;
+    color: #0088A2;
+    text-align: center;
+    font-size:50px;
+}
+.banner{
+   width:100%;
+   position:relative;
+}
+.video{
+    width:100%;
+}
+.play{
+    position: absolute;
+top:40%;
+left:45%;
+width:70px;
+}
+.fiveCards{
+    width:60%;
+    margin:auto;
+    margin-top:4%;
+    height:550px;
+    position: relative;
+
+}
+.kartochka{
+    position: absolute;
+    width:250px;
+}
+.kartochka:nth-child(2){
+    left:20%;
+}
+.kartochka:nth-child(3){
+    left:40%;
+}
+.kartochka:nth-child(4){
+    left:60%;
+}
+.kartochka:nth-child(5){
+    left:80%;
+}
+.kartochka:nth-child(even){
+    top:5%;
+}
+.project{
+    margin:20px 0px 50px 0px;
+}
+ .project h2{
+
+    color: #0088A2;
+    font-size: 50px;
+    text-align: center;
+
+}
+.project p{
+    color:#707070;
+    font-size: 25px;
+    text-align: center;
+    width:50%; 
+    margin: auto;
+}
+.download{
+    margin:20px 0px 50px 0px;
+
+}
+.download h2{
+    color: #0088A2;
+    font-size: 50px;
+    text-align: center;
+
+}
+.pictures {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.pictures img{
+    width: 250px;
+
+}
+.download p{
+    color:#707070;
+    font-size: 25px;
+    text-align: center;
+    width:50%; 
+    margin: auto;
+}
+footer{
+    background-color: #0088A2;
+}
+h2{
+    color:white;
+    font-size: 50px;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+    margin: auto;
+}
+.all{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40px;
+width:96%;
+color: white;
+}
+h3{
+    font-size: 30px;
+}
+
+
+@media only screen and (max-width : 320px) {
+    
+}
